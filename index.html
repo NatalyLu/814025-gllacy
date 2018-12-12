@@ -5,8 +5,8 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body bgcolor="pink">
-     <header class="main_header">
-         <nav class="main_navigation">
+    <header class="main_header">
+        <nav class="main_navigation">
             <a class="main_header_logo">
               <img src="img/svg/logo/logo.svg" width="100" height="100" alt="Логотип Gllacy Shop">
             </a>
@@ -29,30 +29,30 @@
                   </a>
               </li>
             </ul>
-         </nav>
-         <section>
-           <h2>Режим работы</h2>
-           <h3>С 10 до 20, ежедневно <br>
+        </nav>
+        <section>
+          <h2>Режим работы</h2>
+          <h3>С 10 до 20, ежедневно <br>
             <span>8 812 450-25-25</span>
-           </h3>
-         </section>
-     </header>
+          </h3>
+        </section>
+    </header>
         <main class="container">
 <!------------------------------------------------------------------------ -->
 <!-- Реклама -->
 <!------------------------------------------------------------------------- -->
           <section>
-            <h2 class="page_title">Комбо</h2>
+            <h2 class="page_title visualy-hidden">Комбо</h2>
             <!-- Здесь будут две мороженки (^^) -->
             <span class="variant1">Крем-брюле и пломбир с малиновым джемом</span>
             <!-- <span class="variant2">Второй вариант мороженок</span> 
-               <span class="variant3">Третий вариант мороженок</span> 
+              <span class="variant3">Третий вариант мороженок</span> 
               -->
             <br>
             <a class="button button_combo" href=#>Давайте оба!</a>
           </section>
           <section>
-            <h2>Акции</h2>
+            <h2 class="visualy-hidden">Акции</h2>
             <!-- Здесь будут 2 картинки-ссылки с акцииями -->
             <section>
               <h3>Малинка даром!</h3>
@@ -70,55 +70,47 @@
           </section>
 
           <section>
-            <h2>Хиты</h2>
+            <h2 class="visualy-hidden">Хиты</h2>
             <!-- Здесь будут 4 картинки-ссылки мороженного -->
             <ul class="hit_catalog_list">
               <li class="hit_item">                  
-                <a class="hit_item_image" href="catalog_item.html">
-                  <img src="img/1page/item_1.jpg" width="200" height="200" alt="Сливочное мороженное">
-                </a>                  
-                <p class="item_price">
-                  <b>310 ₽/кг</b>
-                  <a class="link" href="catalog_item.html">Сливочное с апельсиновым
+                <a href="catalog_item.html">
+                  <img src="img/1page/item_1.jpg" class="hit_item_image" width="200" height="200" alt="Сливочное мороженное">               
+                  <p class="link">Сливочное с апельсиновым
                     джемом и цитрусовой стружкой
-                  </a>
-                </p>
+                  </p>
+                </a>
+                <p class="item_price">310 ₽/кг</p>
               </li>
               <li class="hit_item">
-                <a class="hit_item_image" href="catalog_item.html">
-                  <img src="img/1page/item_2.jpg" width="200" height="200" alt="Сливочно-кофейное мороженное">
-                </a>
-                <p class="item_price">
-                  <b>380 ₽/кг</b>
-                  <a class="link" href="catalog_item.html">Сливочно-кофейное с
+                <a href="catalog_item.html">
+                  <img src="img/1page/item_2.jpg" class="hit_item_image" width="200" height="200" alt="Сливочно-кофейное мороженное">
+                  <p class="link">Сливочно-кофейное с
                     кусочками шоколада
-                  </a>
-                </p>
+                  </p>
+                </a>
+                  <p class="item_price">380 ₽/кг</p>
               </li>
               <li class="hit_item">
-                <a class="hit_item_image" href="catalog_item.html">
-                  <img src="img/1page/item_3.jpg" width="200" height="200" alt="Сливочно-клубничное мороженное">
-                </a>
-                <p class="item_price">
-                  <b>355 ₽/кг</b>
-                  <a class="link" href="catalog_item.html">Сливочно-клубничное с 
+                <a href="catalog_item.html">
+                  <img src="img/1page/item_3.jpg" class="hit_item_image" width="200" height="200" alt="Сливочно-клубничное мороженное">
+                  <p class="link">Сливочно-клубничное с 
                     присыпкой из белого шоколада
-                  </a>
-                </p>
+                  </p>
+                </a>
+                <p class="item_price">355 ₽/кг</p>
               </li>
               <li class="hit_item">
-                <a class="hit_item_image" href="catalog_item.html">
-                  <img src="img/1page/item_4.jpg" width="200" height="200" alt="Сливочное мороженное крем-брюле">
-                </a>
-                <p class="item_price">
-                  <b>415 ₽/кг</b>
-                  <a class="link" href="catalog_item.html">Сливочное крем-брюле с
+                <a href="catalog_item.html">
+                  <img src="img/1page/item_4.jpg"  class="hit_item_image" width="200" height="200" alt="Сливочное мороженное крем-брюле">
+                  <p class="link">Сливочное крем-брюле с
                     карамельной подливкой
-                  </a>
-                </p>
+                  </p>
+                </a>
+                <p class="item_price">415 ₽/кг</p>
               </li>
             </ul>
-           </section>
+          </section>
           
 <!------------------------------------------------------------------------ -->
 <!-- Преимущества,новости и рассылка -->
@@ -165,7 +157,7 @@
 <!-- Карта -->
 <!------------------------------------------------------------------------- -->
           <img src="img/backgrounds/map.jpg" width="100%"  alt="Адрес главного офиса: Санкт-Петербург, ул. Большая Конюшеннаяя 19/8. Телефон: 8812450-25-25">
-           <!-- Здесь будет форма 
+          <!-- Здесь будет форма 
           <a href="map.html">Как нас найти?</a>-->
         </main>
 <!-------------------Футер------------------------>
@@ -201,5 +193,64 @@
             </p>
           </div>
         </footer>  
+<!------------------------------------------------------------------------ -->
+<!-- Меню каталога -->
+<!------------------------------------------------------------------------- -->
+        <fieldset>
+          <form class="menu catalog" action="#search.html" method="get">
+              <select multiple name="catalog_" size="5">
+                  <option value="new"><a href="#">Новинки</a></option>
+                  <option value="creamy"><a href="index.html">Сливочное</a></option>
+                  <option value="Sherbets"><a href="#">Щербеты</a></option>
+                  <option value="Fruit_ice"><a href="#">Фруктовый лед</a></option>
+                  <option value="Melorin"><a href="#">Мелорин</a></option>
+              </select>
+          </form>
+        </fieldset>
+<!------------------------------------------------------------------------ -->
+<!-- Поиск -->
+<!------------------------------------------------------------------------- -->
+        <fieldset>
+          <form class="searching" action="#search.html" method="get">
+            <input type="search" name="search" placeholder="Что ищем?"> 
+          </form>
+        </fieldset>
+<!------------------------------------------------------------------------ -->
+<!-- Вход -->
+<!------------------------------------------------------------------------- -->
+          <fieldset>
+            <form class="searching" action="index.html" method="post">
+            <label><p class="visualy-hidden">Логин</p>
+              <input type="email" name="login" placeholder="Электронная почта" required> 
+            </label>
+            <label><p class="visualy-hidden">Пароль</p>
+              <input type="password" name="password" placeholder="Пароль" required> 
+            </label>
+            <input type="submit" value="Войти" class="button button_input" name="input">
+            <ul>
+              <li><a class="link restore" href="#">Забыли пароль?</a></li>
+              <li><a class="link regestration" href="#">Новая регистрация</a></li>
+            </ul>         
+          </form>
+        </fieldset>
+<!------------------------------------------------------------------------ -->
+<!-- Обратная связь -->
+<!------------------------------------------------------------------------- -->
+        <fieldset>
+          <form class="searching" action="index.html" method="post">
+            <h2>Мы обязательно Вас ответим!</h2>
+            <label><p class="visualy-hidden">Ваше имя</p>
+              <input type="text" name="name" placeholder="Как Вас зовут?"> 
+            </label>
+            <label><p class="visualy-hidden">Ваша почта</p>
+              <input type="email" name="email" placeholder="Ваша почта для ответа?" required> 
+            </label>
+            <label><p class="visualy-hidden">Отзыв/рекомендации</p>
+              <textarea name="feedback" rows="7">Напишите что-нибудь...</textarea>
+            </label>
+            <input type="submit" value="Отправить" class="button button_send" name="send_feedback">                  
+          </form>
+        </fieldset>
+
   </body>
 </html>
