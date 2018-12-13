@@ -50,7 +50,7 @@
                 <h2>Фильтр мороженного</h2>
             
 <!-- Здесь будет форма -->
-                <form>
+                <form class="sort" name="filter" method="get"> 
                     <label class="forms" for="sort">Сортировка</label> <br> 
                     <select class="disign_forms" name="sorting" id="sort">
                         <option value="famouse" selected>По популярности</option>
@@ -76,8 +76,8 @@
                         <input type="radio" name="add_it" value="syrups">сиропы
                         <input type="radio" name="add_it" value="jams">джемы
                     </span>
-                
-                    <input type="submit" name="addition" class="button button_apply" value="Применить">
+                    <button type="submit" class="button button_apply" value="addition">Применить</button>
+                    <!-- <input type="submit" name="addition" class="button button_apply" value="Применить"> -->
                  </form>
 
                 <section class="catalog">
@@ -244,8 +244,11 @@
                 </p>
             </div>
           </footer> 
+<!------------------------------------------------------------------------ -->
+<!-- Корзина -->
+<!------------------------------------------------------------------------- -->
             <fieldset>
-                <form class="basket_list" action="#bascket.html" method="get">
+                <form class="basket_list" name="basket_list" action="#bascket.html" method="get">
                     <select multiple name="bascket_" size="2">
                         <option value="orang_ice">
                             <a href="#bascket.html">
@@ -267,7 +270,8 @@
                     <p>Итого:
                         <output>750 руб.</output>
                     </p>
-                    <input type="submit" value="Оформить заказ" class="button button_order" name="send_order"> 
+                    <button type="submit" class="button button_order" value="send_order">Оформить заказ</button>
+                    <!-- <input type="submit" value="Оформить заказ" class="button button_order" name="send_order">  -->
                 </form>
             </fieldset>
    </body>

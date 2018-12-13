@@ -151,7 +151,8 @@
                     Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
               </label>
               <input type="email" id="mail" name="email" placeholder="Электронная почта">
-              <input type="submit" value="Отправить" class="button button_send" name="send">
+              <button type="submit" class="button button_send" value="mailing">Отправить</button>
+              <!-- <input type="submit" value="Отправить" class="button button_send" name="send"> -->
           </form>
 <!------------------------------------------------------------------------ -->
 <!-- Карта -->
@@ -197,7 +198,7 @@
 <!-- Меню каталога -->
 <!------------------------------------------------------------------------- -->
         <fieldset>
-          <form class="menu catalog" action="#search.html" method="get">
+          <form class="menu catalog" name="menu_list" action="#search.html" method="get">
               <select multiple name="catalog_" size="5">
                   <option value="new"><a href="#">Новинки</a></option>
                   <option value="creamy"><a href="index.html">Сливочное</a></option>
@@ -211,7 +212,7 @@
 <!-- Поиск -->
 <!------------------------------------------------------------------------- -->
         <fieldset>
-          <form class="searching" action="#search.html" method="get">
+          <form class="searching" name="searching" action="#search.html" method="get">
             <input type="search" name="search" placeholder="Что ищем?"> 
           </form>
         </fieldset>
@@ -219,14 +220,15 @@
 <!-- Вход -->
 <!------------------------------------------------------------------------- -->
           <fieldset>
-            <form class="searching" action="index.html" method="post">
+            <form class="registration" name="registration" action="index.html" method="post">
             <label><p class="visualy-hidden">Логин</p>
               <input type="email" name="login" placeholder="Электронная почта" required> 
             </label>
             <label><p class="visualy-hidden">Пароль</p>
               <input type="password" name="password" placeholder="Пароль" required> 
             </label>
-            <input type="submit" value="Войти" class="button button_input" name="input">
+            <button type="submit" class="button button_input" value="input">Войти</button>
+            <!-- <input type="submit" value="Войти" class="button button_input" name="input"> -->
             <ul>
               <li><a class="link restore" href="#">Забыли пароль?</a></li>
               <li><a class="link regestration" href="#">Новая регистрация</a></li>
@@ -237,7 +239,7 @@
 <!-- Обратная связь -->
 <!------------------------------------------------------------------------- -->
         <fieldset>
-          <form class="searching" action="index.html" method="post">
+          <form class="feedback_form" name="feedback_form" action="index.html" method="post">
             <h2>Мы обязательно Вас ответим!</h2>
             <label><p class="visualy-hidden">Ваше имя</p>
               <input type="text" name="name" placeholder="Как Вас зовут?"> 
@@ -248,7 +250,8 @@
             <label><p class="visualy-hidden">Отзыв/рекомендации</p>
               <textarea name="feedback" rows="7">Напишите что-нибудь...</textarea>
             </label>
-            <input type="submit" value="Отправить" class="button button_send" name="send_feedback">                  
+            <button type="submit" class="button button_send" value="send_feedback">Отправить</button>
+            <!-- <input type="submit" value="Отправить" class="button button_send" name="send_feedback">                   -->
           </form>
         </fieldset>
 
