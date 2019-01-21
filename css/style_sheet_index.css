@@ -1,0 +1,239 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    color: white;
+    text-transform: none;
+
+    background-color:#849d8f;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+li{
+    list-style: none;
+}
+
+/* Шапка */
+.site_navigation{
+    line-height: 18px;     
+   /* text-decoration: underline;*/
+}
+.site_navigation a{
+    border-bottom: 1px solid #adc4b8;
+}
+
+.user_navigation{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+/* Создаем эффект кнопки */
+.user_navigation a{
+    color: white;
+    background:#a1b4a9;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+/* Отступы для лупы */
+.user_navigation .search_nav{
+    padding: 8px; 
+}
+/* Чтобы значки встали на место */
+.user_navigation svg{
+    vertical-align:middle;
+}
+
+  
+
+.site_navigation a:hover,
+.site_navigation a:focus,
+.user_navigation a:hover,
+.user_navigation a:hover g,
+.user_navigation a:hover path,
+.user_navigation a:focus{
+    color:black;
+    background:white;
+    fill:#000;
+}
+
+/* Прячем некоторые элементы  */
+.visually_hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+/* Режим работы */
+.regim span:first-child{
+    font-size: 14px;
+    line-height: 16px; 
+}
+.regim span:last-child{
+    font-size: 22px;
+    line-height: 24px;  
+}
+
+/* ------------------------------- */
+            /* BODY */
+/* ------------------------------- */
+.container .combo_text{                 /*Заголовок комбо "Крем-брюле  пломбир с малиновым джемом*/
+    font-size: 60px;
+    line-height: 61px; 
+    position: relative;
+    left: 200px;
+    top: 400px;
+    width:100px;
+} 
+
+
+.container h3{                                     /*Заголовки акций "малинка даром".. */
+    font-size: 35px;
+    line-height: 41px;  
+}
+.container .actions li{
+    height:230px;    
+    border-radius: 16px;
+    background-color: #f28066;
+}
+.container .raspberries{
+    background: #a6173e url("../img/backgrounds/stocks/raspberries.jpg") no-repeat; 
+}
+.container .chocolat{
+    background: #5d3421 url("../img/backgrounds/stocks/chocolat.jpg") no-repeat;
+}
+span.bonuses{                           /*Текст акции */
+    font-size: 18px;
+    line-height: 22px;  
+}
+
+/* -----------Хиты------------*/
+.hit_catalog_list .item_price{          /* Хиты -> цена*/
+    font-size: 45px;
+    line-height: 45px; 
+    text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5); 
+    position: relative;
+    left: 5px;
+    top: -160px;
+}
+.hit_catalog_list a .link{                         /* Хиты -> Название*/
+    font-size: 16px;
+    line-height: 22px; 
+    /* text-decoration: underline; */
+    /* text-decoration-color: #adc4b8; */
+    border-bottom: 1px solid #adc4b8;
+    width:250px;
+}
+.catalog_item img{                        /* Изображение */
+    border-radius: 50%;
+}
+/* ----------------------------- */
+/* О магазине и его достоинствах */
+/* ----------------------------- */
+
+.container .advantages{
+    background:#ede0c4 url("../img/backgrounds/vafl'a_fon.jpg") no-repeat;
+}
+.advantages .definition{
+    font-size: 24px;
+    line-height: 30px;
+    /* font-weight: 400; */
+    color: black;
+}
+.advantages .advantages_list{
+    font-weight: 400;
+    color: black;
+}
+
+.container .blog_news{
+    background:#ede0c4 url("../img/backgrounds/Strawberry.jpg") no-repeat;
+    height:220px;
+    /* width:560px; */
+}
+.container .mailing{
+    background:#ede0c4 url("../img/backgrounds/podl.jpg") no-repeat;
+    height:220px;
+}
+
+.container .catalog_item{}
+
+  
+
+.container .advantages,
+.container .blog_news{
+    border-radius: 20px;
+}
+
+
+/* --------------------------- */
+/* ОБШИЕ СТИЛИ ДЛЯ ВСЕХ КНОПОК */
+/* --------------------------- */
+.button {
+
+    background: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+    box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+    border-radius: 30px;
+    text-align: center;
+    /* transition: 0.1s; */
+}
+.button:hover{
+    background:#f28066;
+}
+.button:active{
+    background: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+    box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.64); 
+}
+
+
+  
+
+/* ------------------------------- */
+/*СТИЛИ ДЛЯ КНОПОК НА ГЛАВНОЙ СТР  */
+/* ------------------------------- */
+/* Давайте оба */
+.button_combo{
+    font-size: 32px;
+    line-height: 44px; 
+    padding: 10px 40px; 
+    text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+    transform: matrix( 1.04013375779322,0,0,1.04013375779322,0,0);
+    position: absolute;
+}
+    /* Хочу */
+.button_sell{
+    font-size: 18px;
+    line-height: 24px;  
+    padding: 12px 25px;
+}
+    /* ХИТЫ */
+/* Кнопка товара "Быстрый просмотр" */
+.button_recet {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+  }
+.button_quick_view{
+    font-size: 18px;
+    line-height: 24px;  
+    padding: 12px 17px;
+    border-radius: 23px;
+    display:none;
+  }
+.hit_item:hover .button_quick_view  {
+    display:block;
+}
+
+
+
