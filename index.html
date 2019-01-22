@@ -16,7 +16,7 @@
             <ul class="site_navigation">
               <li><a class="link" href="catalog.html">Каталог</a></li>
               <li><a class="link" href="delivery_payment.html">Доставка и оплата</a></li>
-              <li><a class="link" href="about us.html">О Компании</a></li>    
+              <li><a class="link" href="about_us.html">О Компании</a></li>    
             </ul>
             <ul class="user_navigation">
               <li><a class="search_nav" href="search.html">
@@ -77,8 +77,8 @@
 
 
           <section> -->
+            <h2 class="visually_hidden">Акции</h2>
             <ul class="actions">
-              <h2 class="visually_hidden">Акции</h2>
               <li class="raspberries">
                 <h3>Малинка даром!</h3>
                 <span class="bonuses">При покупке 2 кг любого фруктового мороженного, 
@@ -108,7 +108,7 @@
                   </p>
                   <p class="item_price">310 ₽/кг</p>
                 </a> 
-                <button class="button_recet button button_quick_view" href=#>Быстрый просмотр</button>            
+                <button class="button_recet button button_quick_view">Быстрый просмотр</button>            
               </li>
 
               <li class="catalog_item hit_item">
@@ -119,7 +119,7 @@
                   </p>
                   <p class="item_price">380 ₽/кг</p>
                 </a>
-                <button class="button_recet button button_quick_view" href=#>Быстрый просмотр</button>                  
+                <button class="button_recet button button_quick_view" >Быстрый просмотр</button>                  
               </li>
 
               <li class="catalog_item hit_item">
@@ -130,7 +130,7 @@
                   </p>
                   <p class="item_price">355 ₽/кг</p>
                 </a>                
-                <button class="button_recet button button_quick_view" href=#>Быстрый просмотр</button>
+                <button class="button_recet button button_quick_view">Быстрый просмотр</button>
               </li>
 
               <li class="catalog_item hit_item">
@@ -140,7 +140,7 @@
                   </p>
                   <p class="item_price">415 ₽/кг</p>
                 </a>                
-                <button class="button_recet button button_quick_view" href=#>Быстрый просмотр</button>
+                <button class="button_recet button button_quick_view" >Быстрый просмотр</button>
               </li>
             </ul>
           </section>
@@ -190,7 +190,7 @@
 <!------------------------------------------------------------------------ -->
 <!-- Карта -->
 <!------------------------------------------------------------------------- -->
-          <img src="img/backgrounds/map.jpg" width="100%"  alt="Адрес главного офиса: Санкт-Петербург, ул. Большая Конюшеннаяя 19/8. Телефон: 8812450-25-25">
+          <img src="img/backgrounds/map.jpg" width="1200px"  alt="Адрес главного офиса: Санкт-Петербург, ул. Большая Конюшеннаяя 19/8. Телефон: 8812450-25-25">
           <!-- Здесь будет форма 
           <a href="map.html">Как нас найти?</a>-->
         </main>
@@ -232,13 +232,13 @@
 <!------------------------------------------------------------------------- -->
         <fieldset>
           <form class="menu catalog" name="menu_list" action="#search.html" method="get">
-              <select multiple name="catalog_" size="5">
-                  <option value="new"><a href="#">Новинки</a></option>
-                  <option value="creamy"><a href="index.html">Сливочное</a></option>
-                  <option value="Sherbets"><a href="#">Щербеты</a></option>
-                  <option value="Fruit_ice"><a href="#">Фруктовый лед</a></option>
-                  <option value="Melorin"><a href="#">Мелорин</a></option>
-              </select>
+              <ul multiple name="catalog_" size="5">
+                  <li value="new"><a href="#">Новинки</a></li>
+                  <li value="creamy"><a href="index.html">Сливочное</a></li>
+                  <li value="Sherbets"><a href="#">Щербеты</a></li>
+                  <li value="Fruit_ice"><a href="#">Фруктовый лед</a></li>
+                  <li value="Melorin"><a href="#">Мелорин</a></li>
+              </ul>
           </form>
         </fieldset>
 <!------------------------------------------------------------------------ -->
@@ -254,10 +254,10 @@
 <!------------------------------------------------------------------------- -->
           <fieldset>
             <form class="registration" name="registration" action="index.html" method="post">
-            <label><p class="visualy-hidden">Логин</p>
+            <label><span class="visualy-hidden">Логин</span>
               <input type="email" name="login" placeholder="Электронная почта" required> 
             </label>
-            <label><p class="visualy-hidden">Пароль</p>
+            <label><span class="visualy-hidden">Пароль</span>
               <input type="password" name="password" placeholder="Пароль" required> 
             </label>
             <button type="submit" class="button button_input" value="input">Войти</button>
@@ -274,13 +274,13 @@
         <fieldset>
           <form class="feedback_form" name="feedback_form" action="index.html" method="post">
             <h2>Мы обязательно Вас ответим!</h2>
-            <label><p class="visualy-hidden">Ваше имя</p>
+            <label><span class="visualy-hidden">Ваше имя</span>
               <input type="text" name="name" placeholder="Как Вас зовут?"> 
             </label>
-            <label><p class="visualy-hidden">Ваша почта</p>
+            <label><span class="visualy-hidden">Ваша почта</span>
               <input type="email" name="email" placeholder="Ваша почта для ответа?" required> 
             </label>
-            <label><p class="visualy-hidden">Отзыв/рекомендации</p>
+            <label><span class="visualy-hidden">Отзыв/рекомендации</span>
               <textarea name="feedback" rows="7">Напишите что-нибудь...</textarea>
             </label>
             <button type="submit" class="button button_send" value="send_feedback">Отправить</button>
